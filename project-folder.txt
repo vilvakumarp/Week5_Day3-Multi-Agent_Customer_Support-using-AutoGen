@@ -1,0 +1,48 @@
+Week5_Day3-Multi-Agent_Customer_Support-using AutoGen/
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+├── README.md
+│
+├── app.py                              # Streamlit UI (to be developed)
+├── orchestrator.py                     # Coordinates all agents
+│
+├── agents/
+│   ├── __init__.py
+│   ├── document_intelligence.py         # Analyses uploaded PDFs
+│   ├── query_understanding_agent.py    # Understands customer queries
+│   ├── web_research_agent.py           # Web search and source research
+│   ├── response_generation_agent.py    # Generates customer responses
+│   └── response_validation_agent.py    # Validates generated responses
+│
+├── database/
+│   ├── __init__.py
+│   ├── db_manager.py                   # SQLite database operations
+│   └── search_cache.py                 # Web search cache management
+│
+├── rag/
+│   ├── __init__.py
+│   ├── document_processor.py           # PDF text extraction and splitting
+│   ├── vector_store.py                 # ChromaDB indexing and persistence
+│   └── retrieval.py                    # Retrieves relevant document passages
+│
+├── tools/
+│   ├── __init__.py
+│   ├── web_search.py                   # Serper.dev search integration
+│   └── source_retriever.py             # Downloads and extracts PDF/HTML sources
+│
+├── data/
+│   └── uploaded_pdfs/                  # Uploaded organisation documents
+│
+├── rag_db/                             # Persistent ChromaDB storage
+│
+├── tests/
+│   ├── test_rag.py
+│   ├── test_orchestrator.py
+│   ├── test_orchestrator_web.py
+│   ├── test_web_source_integration.py
+│   ├── test_web_source_success.py
+│   └── test_source_retriever.py
+│
+└── chat_history.db                     # SQLite database

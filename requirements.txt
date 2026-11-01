@@ -1,0 +1,35 @@
+# AutoGen Customer Support RAG Application
+
+# Microsoft AutoGen
+autogen-agentchat
+autogen-ext[openai]
+
+# Streamlit interface
+streamlit
+plotly
+altair
+
+# Persistent vector database and embeddings
+chromadb
+sentence-transformers
+
+# LangChain document loading and text splitting
+langchain-community
+langchain-text-splitters
+pypdf
+beautifulsoup4
+
+# Environment configuration
+python-dotenv
+
+# Serper.dev API integration (called through requests)
+requests
+
+#test
+pytest
+pytest-asyncio
+reportlab
+
+
+# streamlit
+streamlit
