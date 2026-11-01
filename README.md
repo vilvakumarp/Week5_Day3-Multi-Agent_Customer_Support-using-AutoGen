@@ -8,5 +8,7 @@ Run the demo with:
 python seed_demo_customers.py
 streamlit run app.py
 ```
+Use credentails.txt file contents  to login
+
 
 The seed script is idempotent. Demo records are stored in SQLite with hashed account/mobile lookup values and PBKDF2-hashed PINs. The existing ChromaDB knowledge base and organisation records are preserved.
